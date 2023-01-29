@@ -1,0 +1,133 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Sansita:wght@400;700&display=swap');
+
+body {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Sansita', sans-serif;
+}
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+
+.main-container {
+    width: 100%;
+    min-height: 100vh;
+    overflow: hidden;
+    background-image: url(/AdhanApp/imgs/3.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    animation: change 10s infinite ease-in-out;
+}
+
+.titel {
+    padding: 20px;
+    margin-bottom: 50px;
+}
+.titel h1 {
+    font-size: 100px;
+    color: rgb(252, 253, 255);
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 1px #000000;
+}
+.titel span {
+    font-size: 25px;
+    color: aliceblue;
+    letter-spacing: 1px;
+    text-shadow: 2px 1px #000000;
+}
+.content {
+    width: 100%;
+    text-align: center;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+.grid-item {
+    margin: 20px;
+    background-color: rgb(255, 255, 255);
+    height: 170px;
+}
+.grid-item h1 {
+    background-image: linear-gradient(to left top, #bcf2fc, #c9f3ed, #daf1e4, #e9f0e3, #f0efe9);
+    padding: 5px;
+    margin-bottom: 50px;
+    font-size: 30px;
+    font-weight: 400;
+}
+.grid-item span {
+    font-size: 23px;
+}
+
+.scersh-bar {
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 50px;
+}
+#city-names {
+    width: 300px;
+    height: 30px;
+    border-radius: 5px;
+    background-color: #e6f7f5;
+    border: none;
+}
+
+
+@keyframes change {
+    0%
+    {
+        background-image: url(/AdhanApp/imgs/1.jpeg);
+    }
+    50%
+    {
+        background-image: url(/AdhanApp/imgs/2.jpeg);
+    }
+    100%
+    {
+        background-image: url(/AdhanApp/imgs/3.jpeg);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ? Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+    .grid-container {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}
+
+/* ? Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .grid-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+/* ? Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .grid-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
